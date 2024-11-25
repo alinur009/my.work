@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 980px;
+    height: 1168.28px;
+    margin: 0 auto;
+    padding: 0.01em 16px;
+}
+
+.opacity-min {
+    opacity: .75;
+}
+
+header {
+    color: #ab3e3e;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    
+}
+
+.btn  ul li {
+    display: inline-block;
+    padding: 10px 16px;
+    text-transform: uppercase;
+}
+.btn ul li a {
+    color: #777;
+    text-decoration: none;
+}
+
+.btn ul li:hover{
+    background-color: #ccc;
+    
+}
+.btn ul li:hover a{
+    color: black;
+    
+}
+
+.search {
+    display: grid;
+    place-items: center;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #777;
+}
+
+.search:hover{
+    background-color: #f44336;
+    color: white;
+}
+
+
+main {
+    width: 100%;
+    min-height: 400px;
+    z-index: -1;
+    display: grid;
+    place-items: center;
+}
+.photo {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(../images/parallax1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main_section {
+    position: relative;
+    background: #000000;
+    padding: 10px 20px;
+    opacity: 1;
+    z-index: 22;
+    opacity: .8;
+    border-radius: 5px;
+}
+.main_section span {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.about {
+    position: relative;
+    line-height: 1.8;
+    padding: 64px 0 64px 0;
+}
+.about-title {
+    text-align: center;
+    font-size: 24px;
+    color: #777;
+}
+
+.paragraph{
+    font-style: italic;
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+.paragraph1 {
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.about__me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.myd-photo {
+   padding-left: 20px;
+}
+
+.my-photo p {
+    text-align: center;
+    color: #777;
+    margin: 20px 0 20px 0;
+}
+.me-photo_avatar {
+    border-radius: 4px;
+    opacity: 0.60;
+}
+
+.me-photo_avatar:hover{
+    opacity: 1;
+}
+
+.me-text {
+    font-size: 15px;
+    padding: 12px 0  12px 50px;
+    color: #777;
+    line-height: 2.1;
+}
+
+
+.my_skills{
+    width: 100%;
+}
+
+.my_skills-title{
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 18px;
+    color: #777;
+}
+.skills1{
+    letter-spacing: 10px;
+    margin: 20px 0;
+    color: #777;
+}
+
+.status-bar{
+    width: 100%;
+    height: 35px;
+    background-color: #f1f1f1;
+}
+
+.photograph  .status-bar-child{
+    width: 90%;
+    height: 100%;
+    background-color: #616161;
+    padding: 4px 8px;
+    color: white;
+    text-align: center;
+}
+.web-design  .status-bar-child{
+    width: 85%;
+    height: 100%;
+    background-color: #616161;
+    padding: 4px 8px;
+    color: white;
+    text-align: center;
+}
+.photoshop  .status-bar-child{
+    width: 75%;
+    height: 100%;
+    background-color: #616161;
+    padding: 4px 8px;
+    color: white;
+    text-align: center;
+}
+
+
+.customer_consent{
+    width: 100%;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    background-color: #616161;
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.portfolio {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/parallax2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+
+
+
+.container{
+    padding-top: 64px ;
+    padding-bottom: 64px;
+    padding: 0.01em 16px; 
+    max-width: 980px;
+    margin: auto;
+}
+
+.body{
+   color: #777;
+   line-height: 1.8;
+   font-size: 15px;
+}
+
+
+/* TITLE START */
+.title{
+   text-align: center;
+   font-weight: 400;
+   margin: 10px 0;
+   font-size: 24px;
+   color: #777;
+   
+}
+/* TITLE END*/
+
+/* text Start */
+.text{
+    text-align: center;
+    display: block;
+    color: #777;
+   
+}
+/* text End */
+
+/* gallery and gallery-item Start */
+.gallery{
+    text-align: center;
+    width: 948px;
+    height: 162.74px;
+    /* margin-top: 16px; */
+    
+}
+.gallery-item{
+    padding: 0 8px;
+    width: 216.99px;
+    height: 162.74px;
+    margin-top: 16px;
+    float: left;
+    box-sizing: inherit;
+    justify-content: center ;
+    
+    
+}
+
+.gallery-item{
+    opacity: 1;
+}
+.gallery-item:hover{
+    opacity: 0.60;
+}
+
+/* gallery and gallery-item End */
+
+/* load-more Start */
+.load-more{
+  margin-top: 64px;
+  padding: 12px 24px;
+  color: #000;
+  background-color: #f1f1f1;
+  border: none;
+  font: inherit ;
+}
+
+.load-more{
+    opacity: 1;
+}
+
+.load-more:hover{
+    opacity: 0.60;
+}
+/* load-more End */
+
